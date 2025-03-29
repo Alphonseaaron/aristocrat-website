@@ -3,8 +3,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
     <footer className="bg-aristocrat-dark text-white pt-16 pb-8">
       <div className="container-custom">
@@ -42,6 +40,9 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/contact" className="hover:text-aristocrat-lightGreen transition-colors">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy" className="hover:text-aristocrat-lightGreen transition-colors">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -84,12 +85,8 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="pt-8 border-t border-gray-700 text-sm">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {currentYear} Aristocrats Insurance Brokers Ltd. All rights reserved.</p>
-            <div className="mt-4 md:mt-0">
-              <Link to="/privacy-policy" className="hover:text-aristocrat-lightGreen transition-colors mr-4">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-aristocrat-lightGreen transition-colors">Terms & Conditions</Link>
-            </div>
+          <div className="flex justify-center items-center">
+            <p>Copyright © 2025 | Aristocrats Insurance Brokers | All rights reserved.</p>
           </div>
         </div>
       </div>

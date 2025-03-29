@@ -5,7 +5,7 @@ import About from '../components/home/About';
 import Services from '../components/home/Services';
 import Team from '../components/home/Team';
 import ContactForm from '../components/shared/ContactForm';
-import { Link, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Index = () => {
   const partnerLinks = [
@@ -94,16 +94,6 @@ const Index = () => {
               </a>
             ))}
           </div>
-        </div>
-      </section>
-      
-      {/* Testimonial/Quote Section */}
-      <section className="py-16 bg-aristocrat-green text-white">
-        <div className="container-custom text-center">
-          <blockquote className="text-2xl md:text-3xl font-serif italic max-w-4xl mx-auto">
-            "The Purpose of a Business is to create a Customer."
-          </blockquote>
-          <p className="mt-6">- Quote of the Month</p>
         </div>
       </section>
       

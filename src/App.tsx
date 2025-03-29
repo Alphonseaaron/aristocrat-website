@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Photos from "./pages/Photos";
 import SafinazGroup from "./pages/SafinazGroup";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/photos" element={<Photos />} />
               <Route path="/safinaz-group" element={<SafinazGroup />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
