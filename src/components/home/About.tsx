@@ -67,6 +67,33 @@ const About = () => {
             </ul>
           </div>
         </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-16">
+          <div className="order-2 md:order-1">
+            <h3 className="section-subtitle text-aristocrat-green">Mr. Aasif Karim (Founder)</h3>
+            <p className="mb-4">
+              Businessman, Arbitrator/Mediator and International Sportsman
+            </p>
+            <a 
+              href="https://www.youtube.com/watch?v=0Okzz1Ld5LA" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-aristocrat-green hover:underline flex items-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              Watch video
+            </a>
+          </div>
+          <div className="order-1 md:order-2">
+            <img 
+              src="/lovable-uploads/047dbb9e-a1c7-4e2c-8c35-ee8e0ce68724.png" 
+              alt="Mr. Aasif Karim" 
+              className="rounded-lg shadow-lg w-full h-auto max-w-md mx-auto"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

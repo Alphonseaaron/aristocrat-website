@@ -5,14 +5,61 @@ import About from '../components/home/About';
 import Services from '../components/home/Services';
 import Team from '../components/home/Team';
 import ContactForm from '../components/shared/ContactForm';
+import { Link, ExternalLink } from 'lucide-react';
 
 const Index = () => {
+  const partnerLinks = [
+    {
+      name: "Insurance Regulatory Authority (IRA)",
+      url: "https://www.ira.go.ke/",
+      icon: <ExternalLink className="w-4 h-4" />
+    },
+    {
+      name: "Association of Insurance Brokers of Kenya (AIBK)",
+      url: "https://aibk.co.ke/new/",
+      icon: <ExternalLink className="w-4 h-4" />
+    },
+    {
+      name: "The Karims - A Sporting Dynasty",
+      url: "https://www.thekarims.co.ke/",
+      icon: <ExternalLink className="w-4 h-4" />
+    },
+    {
+      name: "Sports Monthly",
+      url: "https://www.sportsmonthly.co.ke/",
+      icon: <ExternalLink className="w-4 h-4" />
+    }
+  ];
+
   return (
     <div>
       <Hero />
       <About />
       <Services />
       <Team />
+      
+      {/* Partner Links Section */}
+      <section className="py-16 bg-aristocrat-gray">
+        <div className="container-custom">
+          <h2 className="section-title text-center mb-12">Our Partners</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {partnerLinks.map((link, index) => (
+              <a 
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="bg-aristocrat-green rounded-full p-2 text-white">
+                  {link.icon}
+                </div>
+                <span className="font-medium">{link.name}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       
       {/* Testimonial/Quote Section */}
       <section className="py-16 bg-aristocrat-green text-white">
