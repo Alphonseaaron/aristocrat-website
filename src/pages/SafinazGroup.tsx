@@ -11,7 +11,7 @@ const SafinazGroup = () => {
     {
       year: "1992",
       name: "Alpha Sports Ltd",
-      description: "Deals in sports equipment/goods, a sports magazine (www.sportsmonthly.co.ke), and media work. 2013 – Produced "The Karims – A Sporting Dynasty" Documentary (www.thekarims.co.ke)."
+      description: "Deals in sports equipment/goods, a sports magazine (www.sportsmonthly.co.ke), and media work. 2013 - Produced \"The Karims - A Sporting Dynasty\" Documentary (www.thekarims.co.ke)."
     },
     {
       year: "1993",
